@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Случайное изображение</title>
+  <meta http-equiv="refresh" content="0; url=''" id="redirect">
+  <script>
+
+const images = [
+  'https://e.radikal.host/2025/06/30/scr-01.jpg',
+  'https://e.radikal.host/2025/06/30/scr-02.jpg',
+  'https://e.radikal.host/2025/06/30/scr-03.jpg'
+];
+
+    const randomUrl = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("redirect").content = `0; url='${randomUrl}'`;
+  </script>
+</head>
+<body>
+  <p>Перенаправление на случайное изображение...</p>
+</body>
+</html>
